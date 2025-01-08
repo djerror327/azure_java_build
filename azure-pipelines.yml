@@ -21,16 +21,4 @@ jobs:
     inputs:
       mavenPomFile: 'pom.xml'
       goals: 'clean install'
-      publishJUnitResults: true
-      testResultsFiles: '**/surefire-reports/TEST-*.xml'
-      javaHomeOption: 'JDKVersion'
-      mavenVersionOption: 'Default'
-      mavenAuthenticateFeed: false
-      effectivePomSkip: false
-      sonarQubeRunAnalysis: true
-      sqMavenPluginVersionChoice: 'latest'
-      checkStyleRunAnalysis: true
-      pmdRunAnalysis: true
-      findBugsRunAnalysis: true
-      spotBugsRunAnalysis: true
     displayName: 'Run Maven Clean Install'
