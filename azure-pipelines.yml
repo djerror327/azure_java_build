@@ -21,4 +21,9 @@ jobs:
     inputs:
       mavenPomFile: 'pom.xml'
       goals: 'clean install'
-    displayName: 'Run Maven Clean Install'
+      publishJUnitResults: false
+      javaHomeOption: 'JDKVersion'
+      mavenVersionOption: 'Default'
+      mavenAuthenticateFeed: false
+      effectivePomSkip: false
+      sonarQubeRunAnalysis: false
